@@ -1,0 +1,15 @@
+server:
+  port: 8000   # ✅ Defines the server port where the application will run (http://localhost:8000)
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/capstone_project  # ✅ MySQL database URL (replace 'capstone_project' with your actual DB name)
+    username: root    # ✅ MySQL username (change based on your database credentials)
+    password: Chay@0147  # ✅ MySQL password (Ensure this is kept secure in production)
+    driver-class-name: com.mysql.cj.jdbc.Driver  # ✅ Defines the MySQL JDBC driver class for database connection
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect  # ✅ Defines the Hibernate dialect for MySQL 8+
+    hibernate:
+      ddl-auto: update  # ✅ Automatically updates the database schema (Use 'update' in development, 'validate' or 'none' in production)
+    show-sql: true  # ✅ Enables logging of SQL queries in the console (Useful for debugging)

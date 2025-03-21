@@ -1,0 +1,70 @@
+<!-- Root XML definition for the POM file -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<!-- Defines the Maven POM model version -->
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Parent POM (Spring Boot Starter Parent) -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>  <!-- Parent project group ID -->
+		<artifactId>spring-boot-starter-parent</artifactId>  <!-- Parent artifact -->
+		<version>3.3.4</version>  <!-- Spring Boot version -->
+	</parent>
+
+	<!-- Unique project identifier (Group, Artifact, and Version) -->
+	<groupId>org.phase2</groupId>  <!-- Organization or package name -->
+	<artifactId>spring-rest-two</artifactId>  <!-- Project name -->
+	<version>0.0.1-SNAPSHOT</version>  <!-- Version number -->
+
+	<!-- Project properties -->
+	<properties>
+		<java.version>23</java.version>  <!-- Java version used in this project -->
+	</properties>
+
+	<!-- Dependencies required for the project -->
+	<dependencies>
+
+		<!-- Spring Boot Developer Tools (for automatic reloads in development
+		mode) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Web Starter (Enables REST APIs & Web Services) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Validation (for validating user input in APIs) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
+		<!-- Spring Boot JPA (for database operations using Hibernate) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- Springdoc OpenAPI (for generating Swagger UI API documentation) -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+
+		<!-- MySQL JDBC Driver (for connecting Spring Boot with MySQL database) -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version>
+		</dependency>
+
+	</dependencies>
+
+</project>
